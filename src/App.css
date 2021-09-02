@@ -1,38 +1,185 @@
-.App {
+/* Other rules */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #5d534a;
+  font-family: "Roboto", sans-serif;
+}
+h1{
+  color: #fff5da;
   text-align: center;
+  margin-top: 6%;
+  margin-bottom: 5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  color: #fff5da;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Search{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* align-items: center; */
+  /* margin-left: 5%;
+  margin-top: 10px;
+  width: 90%; */
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .Search h1 {
+  margin-top: 20px;
+  font-size: 40px;
+} */
+.Search input {
+  width: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #f7dad9;
+  background-color: #f7dad9;
+  opacity: 90%;
+  margin-top: 3%;
+  padding: .8%;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.5s;
+  color: #5d534a;
+  font-size: clamp(13px, 10vw, 20px);
+  line-height: 30px;
+  font-weight: 400;
+  justify-content: center;
+  align-self: center;
+}
+/* .Search button {
+  width: 10%;
+} */
+button {
+  width: 27%;
+  /* to center the button on the page width */
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #fff5da;
+  background-color: #fff5da;
+  margin-top: 3%;
+  padding: .8%;
+  /* padding: top right bottom left*/
+  transition: background-color 0.5s;
+  font-weight: 700;
+  color: #5d534a;
+  font-size: clamp(13px, 10vw, 20px);
+  line-height: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-self: center;
+}
+button:hover {
+  color: #f7dad9 !important;
+  background-color: #5d534a;
+  border: 1px solid #f7dad9!important;
+  cursor: pointer;
+}
+.buttons{
+  display: flex;
+}
+.btn1{
+  margin-top: 3%;
+}
+.btn2{
+  margin-bottom: 6%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* top | right | bottom | left */
+}
+.Line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 90%;
+}
+.Line li {
+  background-color: #fff5da;
+  opacity: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+}
+.Line li > p {
+  margin-right: 8px;
+}
+.Line li:hover {
+  background-color: #f7dad9;
+}
+/* footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  /* position: absolute; */
+  margin-top: 4%;
+  bottom: 2%;
+}
+.copyright{
+  font-size: clamp(8px, 10vw, 12px);
+  color: #f7dad9;
+}
+@media (max-width: 1184px) {
+  .Line {
+    width: 70%;
+    margin-left: 15%;
   }
-  to {
-    transform: rotate(360deg);
+  button {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .Line {
+    width: 80%;
+    margin-left: 10%;
+  }
+  button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .Line {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .buttons{
+    flex-direction: column;
+  }
+  .btn2{
+    margin-bottom: 7%;
+  }
+  button {
+    width: 50%;
+  }
+  .Search input {
+    /* margin-top: 30px; */
+    width: 70%;
   }
 }
