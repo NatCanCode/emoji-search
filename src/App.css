@@ -45,7 +45,7 @@ h3{
   border-radius: 30px;
   border: 1px solid #f7dad9;
   background-color: #f7dad9;
-  opacity: 90%;
+  /* opacity: 90%; */
   margin-top: 3%;
   padding: .8%;
   text-align: center;
@@ -113,7 +113,7 @@ button:hover {
 }
 .Line li {
   background-color: #fff5da;
-  opacity: 90%;
+  /* opacity: 90%; */
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
